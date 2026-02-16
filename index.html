@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobita ❤️ Shizuka - A Romantic 3D Proposal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="message-box">
+        <div class="heart-left">❤️</div>
+        <div id="dialogue-container">
+            <span id="dialogue-text">Nobita: Shizuka... can we talk?</span>
+        </div>
+        <div class="heart-right">❤️</div>
+    </div>
+
+    <div id="story-progress">
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div id="progress-text">Chapter 1: The Confession</div>
+    </div>
+
+    <div id="controls-panel">
+        <h3>✨ Romantic Scene Controls ✨</h3>
+        <div class="control-item"><span class="key">🖱️ Drag</span> Change Camera Angle</div>
+        <div class="control-item"><span class="key">📜 Scroll</span> Zoom In/Out</div>
+        <div class="control-item"><span class="key">⏎ Space</span> Next Dialogue</div>
+        <div class="control-item"><span class="key">🔄 R</span> Reset View</div>
+        <div class="control-item"><span class="key">🎭 A</span> Toggle Auto-Play</div>
+        <div class="status" id="auto-play-status">Auto-Play: ON</div>
+    </div>
+
+    <div id="floating-hearts"></div>
+
+    <!-- Import Three.js and scripts -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
